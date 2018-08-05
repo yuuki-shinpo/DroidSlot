@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="78dp"
+    tools:context=".DroidSlotActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="123dp"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_constraintBottom_toTopOf="@+id/droidimageid2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/droidimageid1"
+        android:layout_width="81dp"
+        android:layout_height="117dp"
+        android:layout_marginBottom="55dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="138dp"
+        android:src="@drawable/droid_star"
+        app:layout_constraintBottom_toTopOf="@+id/slotbutton1"
+        app:layout_constraintEnd_toStartOf="@+id/droidimageid2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/droidimageid2"
+        android:layout_width="117dp"
+        android:layout_height="104dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:src="@drawable/droid_star"
+        app:layout_constraintBottom_toTopOf="@+id/slotbutton2"
+        app:layout_constraintEnd_toStartOf="@+id/droidimageid3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/droidimageid1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/droidimageid3"
+        android:layout_width="80dp"
+        android:layout_height="123dp"
+        android:layout_marginBottom="68dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="138dp"
+        app:layout_constraintBottom_toTopOf="@+id/slotbutton3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/droidimageid2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="-26dp" />
+
+    <Button
+        android:id="@+id/slotbutton1"
+        android:layout_width="82dp"
+        android:layout_height="76dp"
+        android:layout_marginBottom="212dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="39dp"
+        android:layout_marginStart="4dp"
+        android:text="ドン☆"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/slotbutton2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/droidimageid1" />
+
+    <Button
+        android:id="@+id/slotbutton2"
+        android:layout_width="wrap_content"
+        android:layout_height="66dp"
+        android:layout_marginBottom="156dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginRight="54dp"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/retrybutton"
+        app:layout_constraintEnd_toStartOf="@+id/slotbutton3"
+        app:layout_constraintStart_toEndOf="@+id/slotbutton1"
+        app:layout_constraintTop_toBottomOf="@+id/droidimageid2" />
+
+    <Button
+        android:id="@+id/slotbutton3"
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:layout_marginBottom="204dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/slotbutton2"
+        app:layout_constraintTop_toBottomOf="@+id/droidimageid3" />
+
+    <Button
+        android:id="@+id/retrybutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="127dp"
+        android:layout_marginLeft="128dp"
+        android:layout_marginRight="127dp"
+        android:layout_marginStart="128dp"
+        android:text="もう一回ドン☆"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/slotbutton3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slotbutton2" />
+
+</android.support.constraint.ConstraintLayout>
