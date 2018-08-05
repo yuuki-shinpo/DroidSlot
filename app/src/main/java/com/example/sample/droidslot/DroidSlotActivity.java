@@ -15,7 +15,7 @@ import android.widget.Toast;
 import java.util.Random;
 
 /**
- * 教科書に沿って作成したスロットマシーン。
+ * 教科書に沿って作成したスロットマシーン。08061317
  */
 public class DroidSlotActivity extends AppCompatActivity {
     int droidSide1 = -1;
