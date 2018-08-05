@@ -14,6 +14,9 @@ import android.widget.Toast;
 
 import java.util.Random;
 
+/**
+ * 教科書に沿って作成したスロットマシーン。
+ */
 public class DroidSlotActivity extends AppCompatActivity {
     int droidSide1 = -1;
     int droidSide2 = -1;
